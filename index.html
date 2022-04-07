@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css">
+
+
+</head>
+<body>
+    <h1>User Registration</h1>
+    <div class="contact-us">
+  
+    <form action="/home/db/Db/evd/Form/thankyou.html">
+        <label>Name:</label>
+        <input type="text" name="name" required/>
+
+        <label>Phone:</label>
+         <input type="tel" maxlength="10" onkeypress="return onlyNumberKey(event)" required/>
+
+         <label> Basic Details:</label>
+        <textarea name="" id="pan-input" cols="80"  rows="5" maxlength="150" required></textarea>
+
+        <label>Pan Card No:</label>
+        <input type="text" id="pan-input" maxlength="10" autocomplete="off" required>
+
+        <label >Upload a Document/Image:</label>
+        <input type="file" id="file" onchange="Filevalidation()" accept=".doc, .docx, .pdf, image/png, image/jpeg" required> <p id="size"></p><br>
+        
+
+        <input type="submit" value="Submit">
+				
+    </form>      
+</div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
